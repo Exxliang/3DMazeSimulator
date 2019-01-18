@@ -44,6 +44,7 @@ public class Maze {
     }
     if (mazeVars.initialized && mazeVars.randomized) {
       mazeVars.completed = true;
+      mazeVars.VISITED = null;
       println(MessageHeader.STATE_INFO, "Ready for simualation.");
     }
   }
