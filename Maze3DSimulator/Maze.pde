@@ -140,7 +140,7 @@ public class Maze {
   }
   
   private float gradient(float dist) {
-    return 200 * exp(-pow(dist, 2) / 100000);
+    return SimConsts.illumination * exp(-pow(dist, 2) / 100000);
   }
   
   private void addOpTrans(float val) {
