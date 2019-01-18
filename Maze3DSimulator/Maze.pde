@@ -93,7 +93,7 @@ public class Maze {
   public void randomize() {
     for (int i = 0; i < int(SimConsts.SIM_LENGTH * 
                             SimConsts.SIM_WIDTH * 
-                            SimConsts.SIM_HEIGHT / float(18 - SimConsts.randomizationLevel)); i++) {
+                            SimConsts.SIM_HEIGHT / float(20 - SimConsts.randomizationLevel)); i++) {
       int x = floor(random(2, SimConsts.SIM_LENGTH));
       int y = floor(random(2, SimConsts.SIM_WIDTH));
       int z = floor(random(2, SimConsts.SIM_HEIGHT));

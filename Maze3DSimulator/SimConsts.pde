@@ -7,11 +7,11 @@ public static abstract class SimConsts {
   static final int smoothAmount = 5;
   static final int SIDES = 6;
   static final int visibDist = 3;
-  static final int illumination = IlluminationMode.BRIGHT;
+  static final int illumination = IlluminationMode.VERYDARK;
   
   static final int SCALE = 100;
-  static final int MOVE_SPEED = 20;
-  static final int randomizationLevel = 2; // 2 - 10 range
+  static final int MOVE_RESISTANCE = 20;
+  static final int randomizationLevel = 10; // 2 - 10 range
   static final int maxMarkerCount = max(1, int((SIM_LENGTH + SIM_WIDTH + SIM_HEIGHT) / 3.0) - 8);
   
   static final float absMouseXBound = PI/4.0;

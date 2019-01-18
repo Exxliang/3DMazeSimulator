@@ -18,14 +18,14 @@ public class PlayerVars {
   }
   
   public float getAbsX() {
-    return float(this.PPOSX) + float(this.PDX) / float(SimConsts.MOVE_SPEED);
+    return float(this.PPOSX) + float(this.PDX) / float(SimConsts.MOVE_RESISTANCE);
   }
   
   public float getAbsY() {
-    return float(this.PPOSY) + float(this.PDY) / float(SimConsts.MOVE_SPEED);
+    return float(this.PPOSY) + float(this.PDY) / float(SimConsts.MOVE_RESISTANCE);
   }
   
   public float getAbsZ() {
-    return float(this.PPOSZ) + float(this.PDZ) / float(SimConsts.MOVE_SPEED);
+    return float(this.PPOSZ) + float(this.PDZ) / float(SimConsts.MOVE_RESISTANCE);
   }
 }

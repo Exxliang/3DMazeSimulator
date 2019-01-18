@@ -21,11 +21,11 @@ public class Camera {
   public void fLook() {
     if (abs(float(playerVars.FDIR)) == 1) {
       cameraVars.DX = utilities.getDir(playerVars.FDIR);
-      cameraVars.DZ = utilities.getDir(playerVars.RDIR) * tan(cameraVars.MDX + PI * cameraVars.turnValue / (2 * SimConsts.MOVE_SPEED));
+      cameraVars.DZ = utilities.getDir(playerVars.RDIR) * tan(cameraVars.MDX + PI * cameraVars.turnValue / (2 * SimConsts.MOVE_RESISTANCE));
     } else
     if (abs(float(playerVars.FDIR)) == 3) {
       cameraVars.DZ = utilities.getDir(playerVars.FDIR);
-      cameraVars.DX = utilities.getDir(playerVars.RDIR) * tan(cameraVars.MDX + PI * cameraVars.turnValue / (2 * SimConsts.MOVE_SPEED));
+      cameraVars.DX = utilities.getDir(playerVars.RDIR) * tan(cameraVars.MDX + PI * cameraVars.turnValue / (2 * SimConsts.MOVE_RESISTANCE));
     }
     cameraVars.DY = tan(cameraVars.MDY);
   }
