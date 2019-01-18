@@ -10,7 +10,8 @@ public class Utilities {
   }
   
   public int removeKthBit(int num, int k) {
-    return int(num - pow(2, k));
+    if ((num & getBinPow(k)) == 0) return num;
+    return int(num - getBinPow(k));
   }
   
   public boolean wallPresent(int x, int y, int z, int k) {
